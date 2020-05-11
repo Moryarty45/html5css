@@ -1,0 +1,502 @@
+@font-face {
+    font-family: SocialIco;
+    src: url("../fonts/Socialico.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    min-height: 100%;
+}
+
+.wrapper {
+    padding: 50px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.wrapper::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.productName {
+    background: #445162;
+}
+
+.productName__text {
+    float: left;
+}
+
+.productName__title h1 {
+    font-size: 60px;
+    line-height: 45px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.productName__desc {
+    padding-top: 50px;
+}
+
+.productName ul {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #ffffff;
+    list-style-image: url("icons/icon_desc.png");
+    padding-left: 31px;
+
+}
+
+.productName__img {
+    float: right;
+    max-width: 469px;
+    height: 214px;
+}
+
+.productName__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutProduct__text {
+    float: left;
+    max-width: 653px;
+}
+
+.aboutProduct__title h2 {
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.aboutProduct__desc p {
+    padding-top: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.aboutProduct__desc p:last-child {
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.aboutProduct__img {
+    float: right;
+    max-width: 430px;
+    height: 245px;
+}
+
+.aboutProduct__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.productAdvantage {
+    background: #e6e4e4;
+}
+
+.productAdvantage__title h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.productAdvantage__paragraph {
+    padding-top: 29px;
+}
+
+.productAdvantage__paragraphMore {
+    margin-bottom: 30px;
+    width: calc(50%);
+    float: left;
+}
+
+.productAdvantage__paragraphMore:nth-child(even) {
+    float: right;
+    padding-left: 8px;
+}
+
+.productAdvantage__paragraphMore:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.productAdvantage__paragraphIcon {
+    float: left;
+    width: 32px;
+    height: 63px;
+    margin-right: 9px;
+}
+
+.productAdvantage__paragraphText {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.productScreenshots__title h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.productScreenshots__desc {
+    padding-top: 35px;
+}
+
+.productScreenshots__descMore {
+    margin-bottom: 30px;
+    width: calc(50%);
+    float: left;
+}
+
+.productScreenshots__descMore:nth-child(even) {
+    float: right;
+    padding-left: 8px;
+}
+
+.productScreenshots__descMore:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.productScreenshots__img {
+    max-width: 200px;
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+}
+
+.productScreenshots__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.productScreenshots__imgTitle h3 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.productScreenshots__imgDesc {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.productReviews {
+    background: #e6e4e4;
+}
+
+.productReviews__title h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.productReviews__desc {
+    padding-top: 35px;
+}
+
+.productReviews__descMore {
+    margin-bottom: 24px;
+    width: calc(49%);
+    float: left;
+}
+
+.productReviews__descMore:nth-child(even) {
+    float: right;
+}
+
+.productReviews__descMore:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.productReviews__img {
+    width: 75px;
+    height: 75px;
+    float: left;
+}
+
+.productReviews__img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.productReviews__imgDesc {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    position: relative;
+    font-style: italic;
+    line-height: 18px;
+    float: right;
+    max-width: 468px;
+    background: #ebebeb;
+    padding: 16px;
+    border-radius: 4px;
+}
+.productReviews__imgDesc::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -10px;
+    top: 29px;
+    background: #ebebeb;
+    transform: rotate(45deg);
+}
+
+.productReviews__imgDesc div:nth-last-child(1) {
+    color: #989898;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 10px;
+}
+
+.productBuy__title h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+}
+
+.productBuy__desc {
+    padding-top: 29px;
+    margin: 0 auto;
+    display: table;
+}
+
+.productBuy__block {
+    width: 298px;
+    background: #445161;
+    border-radius: 4px;
+    border: 2px solid #445161;
+    display: inline-block;
+    margin: 0 22.5px;
+}
+
+.productBuy__blockTitle {
+    padding: 17px 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+
+.productBuy__blockPrice {
+    text-align: center;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445162;
+    background: #fff;
+    padding: 17px 0;
+}
+
+.productBuy__blockDesc ol {
+    list-style-position: inside;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-top: 14px;
+}
+
+.productBuy__blockButton {
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px;
+    background: #fff;
+    color: #445161;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 20px;
+}
+
+.productBuy__blockButton:hover {
+    cursor: pointer;
+}
+
+.productContacts {
+    background: #445161;
+}
+
+.productContacts__title h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.productContacts__desc {
+    padding-top: 29px;
+    margin: 0 auto;
+    display: table;
+}
+
+.productContacts__blockInput {
+    float: left;
+    margin-right: 46px;
+}
+
+.productContacts__blockInput input[type="text"],
+.productContacts__blockInput textarea {
+    display: block;
+    width: 500px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 21px;
+    padding: 7px 5px;
+    color: #445161;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+}
+.productContacts__blockInput textarea {
+    font-family: inherit;
+    min-height: 170px;
+}
+.productContacts__blockInput input[type="submit"] {
+    border-radius: 5px;
+    background-color: #fff;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    color: #445161;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    outline: none;
+}
+
+.productContacts__blockList {
+    float: right;
+}
+
+.productContacts__blockList > div:not(.socialIcons) {
+    margin-bottom: 18px;
+}
+.productContacts__blockList .email,
+.productContacts__blockList .icq,
+.productContacts__blockList .phone,
+.productContacts__blockList .skype {
+    padding-left: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.productContacts__blockList .skype {
+    background: url("../icons/icon_skype.png") no-repeat left center;
+}
+.productContacts__blockList .icq {
+    background: url("../icons/icon_icq.png") no-repeat left center;
+}
+.productContacts__blockList .email {
+    background: url("../icons/icon_email.png") no-repeat left center;
+}
+.productContacts__blockList .phone {
+    background: url("../icons/icon_phone.png") no-repeat left center;
+}
+.productContacts__blockList .socialIcons {
+    font-family: SocialIco, sans-serif;
+    color: #fff;
+    font-size: 60px;
+    line-height: 44px;
+}
+
+.footer {
+    height: 26px;
+    text-align: center;
+    color: #445161;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 26px;
+    background: #f5f5f5;
+}
+
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .productBuy__desc {
+        padding-top: 29px;
+        display: flex;
+    }
+    .productBuy__block {
+        margin: 15px;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .productContacts__desc {
+        padding-top: 29px;
+        display: grid;
+        justify-items: center;
+    }
+    .productContacts__blockList {
+        padding-top: 25px;
+    }
+    .productContacts__blockList .email,
+    .productContacts__blockList .icq,
+    .productContacts__blockList .phone,
+    .productContacts__blockList .skype {
+        display: inline-block;
+    }
+    .productBuy__desc {
+        padding-top: 29px;
+        display: grid;
+        justify-items: center;
+    }
+    .productBuy__block {
+        margin: 15px;
+    }
+}
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+}
+@media (max-width: 650) {
+
+}
