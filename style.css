@@ -357,19 +357,21 @@ body {
 
 .productContacts__desc {
     padding-top: 29px;
-    margin: 0 auto;
-    display: table;
+    display: flex;
+    justify-content: center;
 }
 
 .productContacts__blockInput {
+    outline: 1px solid red;
     float: left;
     margin-right: 46px;
+    width: 500px;
 }
 
 .productContacts__blockInput input[type="text"],
 .productContacts__blockInput textarea {
     display: block;
-    width: 500px;
+    width: 100%;
     border-radius: 5px;
     border: none;
     margin-bottom: 21px;
@@ -472,6 +474,9 @@ body {
     .productContacts__blockList {
         padding-top: 25px;
     }
+    .productContacts__blockInput{
+        max-width: 500px;
+    }
     .productContacts__blockList .email,
     .productContacts__blockList .icq,
     .productContacts__blockList .phone,
@@ -491,6 +496,24 @@ body {
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    .productContacts__desc {
+        padding-top: 29px;
+        /* max-width: 320px; */
+        display: grid;
+        justify-items: center;
+    }
+    .productContacts__blockList {
+        padding-top: 25px;
+    
+    }
+    .productContacts__blockInput {
+        max-width: 320px;
+        padding-left: 0;
+    }
+    /* .productContacts__blockInput input[type="text"],
+    .productContacts__blockInput textarea {
+        max-width: 320px;
+    } */
 }
 
 /* Landscape phones and smaller */
