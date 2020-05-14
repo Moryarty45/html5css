@@ -27,8 +27,18 @@ body {
     display: block;
 }
 
+.wrapVideo video {
+    max-width: 1280px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
 .productName {
-    background: #445162;
+    position: relative;
+    overflow: hidden;
 }
 
 .productName__text {
@@ -52,8 +62,7 @@ body {
     font-weight: 400;
     color: #ffffff;
     list-style-image: url("icons/icon_desc.png");
-    padding-left: 31px;
-
+    list-style-position: inside;
 }
 
 .productName__img {
@@ -104,6 +113,8 @@ body {
 }
 
 .productAdvantage {
+    margin: 0 auto;
+    max-width: 1280px;
     background: #e6e4e4;
 }
 
@@ -202,6 +213,8 @@ body {
 }
 
 .productReviews {
+    margin: 0 auto;
+    max-width: 1280px;
     background: #e6e4e4;
 }
 
@@ -344,6 +357,8 @@ body {
 }
 
 .productContacts {
+    margin: 0 auto;
+    max-width: 1280px;
     background: #445161;
 }
 
@@ -362,7 +377,6 @@ body {
 }
 
 .productContacts__blockInput {
-    outline: 1px solid red;
     float: left;
     margin-right: 46px;
     width: 500px;
@@ -466,6 +480,27 @@ body {
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+    .productName__text {
+        float: none;
+        text-align: center;
+    }
+    .productName__img {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .aboutProduct__text {
+        float: none;
+        max-width: 100%;
+    }
+    .aboutProduct__title {
+        text-align: center;
+    }
+    .aboutProduct__img {
+        float: none;
+        margin: 0 auto;
+    }
     .productContacts__desc {
         padding-top: 29px;
         display: grid;
@@ -491,11 +526,83 @@ body {
     .productBuy__block {
         margin: 15px;
     }
+    .productAdvantage__paragraphMore {
+        float: none;
+        width: 100%;
+    }
+    .productAdvantage__paragraphMore:nth-child(even) {
+        float: none;
+        padding-left: 0px;
+    }
+    .productAdvantage__paragraphMore:nth-last-child(-n+2) {
+        margin-bottom: 30px;
+    }
+
+    .productScreenshots__descMore {
+        float: none;
+        width: 100%;
+    }
+    
+    .productScreenshots__descMore:nth-child(even) {
+        float: none;
+        padding-left: 0px;
+    }
+    .productScreenshots__descMore:nth-last-child(-n+2) {
+        float: none;
+        margin-bottom: 30px;
+    }
+    .productReviews__descMore {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .productReviews__descMore:nth-child(even) {
+        float: none;
+    }
+
+    .productReviews__img {
+        width: 75px;
+        height: 75px;
+        margin: 0 auto;
+        float: none;
+        margin: 20px auto 20px;
+    }
+    .productReviews__imgDesc {
+        float: none;
+        max-width: 100%;
+    }
+    .productReviews__imgDesc::before {
+        left: 49%;
+        top: -10px;
+    }
 }
 
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    .productName__text {
+        float: none;
+        text-align: center;
+    }
+    .productName__img {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .aboutProduct__text {
+        float: none;
+        max-width: 100%;
+    }
+    .aboutProduct__title {
+        text-align: center;
+    }
+    .aboutProduct__img {
+        float: none;
+        margin: 0 auto;
+    }
     .productContacts__desc {
         padding-top: 29px;
         /* max-width: 320px; */
@@ -507,19 +614,111 @@ body {
     
     }
     .productContacts__blockInput {
-        max-width: 320px;
+        width: 100%;
         padding-left: 0;
+        margin-right: 0px;
     }
     /* .productContacts__blockInput input[type="text"],
     .productContacts__blockInput textarea {
         max-width: 320px;
     } */
+
+    .productBuy__desc {
+        padding-top: 29px;
+        display: grid;
+        justify-items: center;
+    }
+    .productBuy__block {
+        margin: 15px;
+    }
+    .productAdvantage__paragraphMore {
+        float: none;
+        width: 100%;
+    }
+    .productAdvantage__paragraphMore:nth-child(even) {
+        float: none;
+        padding-left: 0px;
+    }
+    .productAdvantage__paragraphMore:nth-last-child(-n+2) {
+        margin-bottom: 30px;
+    }
+
+    .productScreenshots__descMore {
+        float: none;
+        width: 100%;
+    }
+    
+    .productScreenshots__descMore:nth-child(even) {
+        float: none;
+        padding-left: 0px;
+    }
+    .productScreenshots__descMore:nth-last-child(-n+2) {
+        float: none;
+        margin-bottom: 30px;
+    }
+    .productReviews__descMore {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .productReviews__descMore:nth-child(even) {
+        float: none;
+    }
+
+    .productReviews__img {
+        width: 75px;
+        height: 75px;
+        margin: 0 auto;
+        float: none;
+        margin: 20px auto 20px;
+    }
+    .productReviews__imgDesc {
+        float: none;
+        max-width: 100%;
+    }
+    .productReviews__imgDesc::before {
+        left: 49%;
+        top: -10px;
+    }
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+    .wrapper {
+        padding: 15px;
+    }
+    .productName__title h1 {
+        font-size: 40px;
+    }
+    .productName ul {
+        font-size: 20px;
+    }
+    .productScreenshots__descMore {
+        width: 100%;
+    }
+    .productScreenshots__img {
+        float: none;
+        margin: 0 auto;
+    }
+    .productScreenshots__imgTitle,
+    .productScreenshots__imgDesc {
+        text-align: center;
+    }
 
-}
-@media (max-width: 650) {
-
+    .productBuy__desc {
+        padding-top: 29px;
+        display: grid;
+        justify-items: center;
+    }
+    .productBuy__block {
+        margin: 5px auto 5px;
+        width: 100%;
+    }
+    .productContacts__blockInput {
+        float: none;
+        margin-right: 0px;
+        width: 100%;
+    }
 }
