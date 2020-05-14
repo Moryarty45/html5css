@@ -78,7 +78,7 @@ body {
 
 .aboutProduct__text {
     float: left;
-    max-width: 653px;
+    max-width: 50%;
 }
 
 .aboutProduct__title h2 {
@@ -539,16 +539,13 @@ body {
     }
 
     .productScreenshots__descMore {
-        float: none;
         width: 100%;
     }
     
     .productScreenshots__descMore:nth-child(even) {
-        float: none;
         padding-left: 0px;
     }
     .productScreenshots__descMore:nth-last-child(-n+2) {
-        float: none;
         margin-bottom: 30px;
     }
     .productReviews__descMore {
@@ -644,16 +641,13 @@ body {
     }
 
     .productScreenshots__descMore {
-        float: none;
         width: 100%;
     }
     
     .productScreenshots__descMore:nth-child(even) {
-        float: none;
         padding-left: 0px;
     }
     .productScreenshots__descMore:nth-last-child(-n+2) {
-        float: none;
         margin-bottom: 30px;
     }
     .productReviews__descMore {
