@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms and cover</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/forms.css">
+    </head>
+    <body>
+        <video src="videos/cover-clouds.mp4" muted preload="auto" autoplay="autoplay"
+        loop="loop"></video>
+        <div class="coverVideo">
+            <div class="coverVideoDesc">
+                <div class="title"><h1>Нет ничего лучше путешествий!<br> Полетели!!</h1></div>
+                <form class="decor">
+                    <div class="form-left-decoration"></div>
+                    <div class="form-right-decoration"></div>
+                    <div class="circle"></div>
+                    <div class="form-inner">
+                        <fieldset>
+                            <h2>Давайте знакомиться!</h2>
+                            <input type="text" placeholder="Ваше имя: Иван" autofocus required pattern="\S+[А-яа-я]">
+                            <input type="email" placeholder="Ваш e-mail: example@mail.ru" required pattern="\S+@[a-z]+.[a-z]+">
+                            <input type="tel" placeholder="Ваш телефон: +7-888-888-88-88" required pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
+                            <input type="number" placeholder="Ваш возраст" required min="14" max="100">
+                            <label for="gender" id="gender_sel">Пол</label>
+                            <select id="gender">
+                                <option value="none"></option>
+                                <option value="male">Мужской</option>
+                                <option value="female">Женский</option>
+                            </select>
+                            <br>
+                            <h2>В каком направлении?</h2>
+                            <div class="form-where">
+                                <input name="direction" id="south" value="south" type="radio">
+                                <label for="south">ХОЧУ НА ЮГ</label>
+                                <br>
+                                <input name="direction" id="north" value="north" type="radio">
+                                <label for="north">ХОЧУ НА СЕВЕР</label>
+                                <br>
+                                <input name="direction" id="west" value="west" type="radio">
+                                <label for="west">ХОЧУ НА ЗАПАД</label>
+                                <br>
+                                <input name="direction" id="east" value="east" type="radio">
+                                <label for="east">ХОЧУ НА ВОСТОК</label>
+                                <br>
+                                <input name="direction" id="lucky" value="lucky" type="radio">
+                                <label for="lucky">Судьба решит!</label>
+                            </div>
+                            <h2>Ваши пожелания?</h2>
+                            <textarea placeholder="Сообщение..." rows="6"></textarea>
+                            <input type="submit" value="Полетели!">
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
