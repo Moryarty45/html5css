@@ -67,7 +67,7 @@ body {
 
 .productName__img {
     float: right;
-    max-width: 469px;
+    max-width: 430px;
     height: 214px;
 }
 
@@ -264,7 +264,7 @@ body {
     font-style: italic;
     line-height: 18px;
     float: right;
-    max-width: 468px;
+    max-width: 80%;
     background: #ebebeb;
     padding: 16px;
     border-radius: 4px;
@@ -484,6 +484,12 @@ body {
         float: none;
         text-align: center;
     }
+
+    .productName__desc ul {
+        display: inline-block;
+        text-align: left;
+    }
+
     .productName__img {
         float: none;
         margin: 0 auto;
@@ -583,6 +589,12 @@ body {
         float: none;
         text-align: center;
     }
+
+    .productName__desc ul {
+        display: inline-block;
+        text-align: left;
+    }
+    
     .productName__img {
         float: none;
         margin: 0 auto;
