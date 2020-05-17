@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("fonts/OpenSans.ttf");
+}
+
+body {
+    background: #fff;
+
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.wrapper  {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    height: 813px;
+    background: url('/Step_3-4/images/header_background.jpg') center center/cover no-repeat;
+    outline: 1px solid red;
+
+}
+
+.menu {
+    /* display: inline-block; */
+    padding-top: 30px;
+}
+
+.header__logo {
+    float: left;
+    
+}
+
+.header__logo h1 {
+font-size: 53.4px;
+font-weight: 800;
+letter-spacing: -0.05em;
+line-height: 53.4px;
+color: #eeb501;
+}
+
+.header__logo h1 span {
+    color: #ffffff;
+}
+
+.header__logo h2 {
+    font-size: 13.9px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.33em;
+color: #ffffff;
+}
+
+.header__menu {
+    float: right;
+}
+
+.header__menu li {
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 20px;
+font-weight: 800;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+color: #ffffff;
+}
+
+.header__main {
+    position: relative;
+}
+
+.header__img {
+    position: absolute;
+    background: url(/Step_3-4/images/header_img.png);
+    min-height: 770px;
+    min-width: 745px;
+    top: 162px;
+    left: -73px;
+}
+
+.header__title span {
+font-size: 68.7px;
+font-weight: 800;
+color: #ffffff;
+}
+
+.header__title h2:nth-child(1) {
+font-size: 143.9px;
+font-weight: 800;
+letter-spacing: -0.05em;
+color: #eeb501;
+}
+
+.header__title h2:nth-child(2) {
+    font-size: 69.6px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.about {
+    height: 714px;
+    background: url(/Step_3-4/images/right_img.png) right center no-repeat,
+                url(/Step_3-4/images/section_about_back.png) center center/cover no-repeat,
+                url(/Step_3-4/images/section_about_bg.png) left bottom/cover no-repeat;               
+}
+
+.portfolio {
+    height: 1219px;
+    background: url(/Step_3-4/images/section_portfolio_background_full.jpg) center center/cover no-repeat;
+}
+
+.portfolio__header {
+    text-align: center;
+    padding: 100px 0 65px 0;
+}
+
+.portfolio__header h2:nth-child(1) {
+    font-size: 29.2px;
+line-height: 1.2;
+font-weight: 400;
+font-style: italic;
+color: #ffffff;
+}
+
+.portfolio__header h2:nth-child(2) {
+    font-size: 43.3px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.portfolio__header span {
+    font-size: 54.8px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+}
+
+.portfolio__header p {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.img1 {grid-area: img1;}
+.img2 {grid-area: img2;}
+.img3 {grid-area: img3;}
+.img4 {grid-area: img4;}
+
+.portfolio__img {
+    display: grid;
+    grid-template-areas:
+    'img1 img2 img3'
+    'img1 img4 img4';
+    grid-gap: 22px;
+}
+
+.portfolio__button {
+    border: 3.0px solid #ffffff;
+    width: 207px;
+    height: 57px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 21.6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 57px;
+    margin: 40px auto 0 auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.portfolio__button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+.team {
+    height: 935px;
+    background: url(/Step_3-4/images/left_img.png) left 255px no-repeat,
+                url(/Step_3-4/images/section_team_backgroud.png) center/auto no-repeat;               
+}
+
+.testimonials {
+    height: 714px;
+    background: url(/Step_3-4/images/section_testimonials_background_full.png) center center/cover no-repeat;     
+}
+
+.testimonials__header {
+    text-align: center;
+    padding: 134px 0 33px 0;
+}
+
+.testimonials__header h2:nth-child(1) {
+    font-size: 29.2px;
+line-height: 1.2;
+font-weight: 400;
+font-style: italic;
+color: #ffffff;
+margin-bottom: 19px;
+}
+
+.testimonials__header h2:nth-child(2) {
+    font-size: 43.3px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.testimonials__header span {
+    font-size: 54.8px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+}
+
+.testimonials__header p {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.testimonials__people {
+    text-align: center;
+}
+
+.testimonials__people img {
+    padding-bottom: 20px;
+}
+
+.testimonials__people h3:nth-child(2) {
+font-size: 29.2px;
+line-height: 1.2;
+font-weight: 800;
+color: #eeb501;
+}
+
+.testimonials__people h3:nth-child(3) {
+    font-size: 25px;
+line-height: 1.2;
+font-weight: 400;
+color: #ffffff;
+}
+
+
+.client {
+    height: 770px;
+    background: url(/Step_3-4/images/right_img.png) right center no-repeat,
+                url(/Step_3-4/images/section_client_background.png) center bottom/auto no-repeat;  
+}
+
+.getit {
+    height: 1390px;
+    background: url(/Step_3-4/images/section_getit_background.jpg) center center/cover no-repeat; 
+}
+
+.bgGetit {
+    height: 100%;
+    background-color: #252525;
+    mix-blend-mode: multiply;
+}
+

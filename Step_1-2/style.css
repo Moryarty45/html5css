@@ -1,6 +1,6 @@
 @font-face {
     font-family: SocialIco;
-    src: url("../fonts/Socialico.ttf");
+    src: url("/Step_1-2/fonts/Socialico.ttf");
 }
 
 * {
@@ -61,7 +61,7 @@ body {
     line-height: 32px;
     font-weight: 400;
     color: #ffffff;
-    list-style-image: url("icons/icon_desc.png");
+    list-style-image: url("/Step_1-2/icons/icon_desc.png");
     list-style-position: inside;
 }
 
@@ -434,16 +434,16 @@ body {
     line-height: 28px;
 }
 .productContacts__blockList .skype {
-    background: url("../icons/icon_skype.png") no-repeat left center;
+    background: url("/Step_1-2/icons/icon_skype.png") no-repeat left center;
 }
 .productContacts__blockList .icq {
-    background: url("../icons/icon_icq.png") no-repeat left center;
+    background: url("/Step_1-2/icons/icon_icq.png") no-repeat left center;
 }
 .productContacts__blockList .email {
-    background: url("../icons/icon_email.png") no-repeat left center;
+    background: url("/Step_1-2/icons/icon_email.png") no-repeat left center;
 }
 .productContacts__blockList .phone {
-    background: url("../icons/icon_phone.png") no-repeat left center;
+    background: url("/Step_1-2/icons/icon_phone.png") no-repeat left center;
 }
 .productContacts__blockList .socialIcons {
     font-family: SocialIco, sans-serif;
@@ -627,10 +627,6 @@ body {
         padding-left: 0;
         margin-right: 0px;
     }
-    /* .productContacts__blockInput input[type="text"],
-    .productContacts__blockInput textarea {
-        max-width: 320px;
-    } */
 
     .productBuy__desc {
         padding-top: 29px;
