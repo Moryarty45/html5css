@@ -1,16 +1,42 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
-    font-family: OpenSans;
-    src: url("fonts/OpenSans.ttf");
+    font-family: 'OneStrokeScriptLetPlain';
+    src: url("/Step_3-4/fonts/OneStrokeScript_LET.ttf");
+}
+
+@font-face {
+    font-family: 'OCRAExtended';
+    src: url("/Step_3-4/fonts/ocraextended.ttf");
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("/Step_3-4/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'OpenSans Italic';
+    src: url("/Step_3-4/fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url("/Step_3-4/fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'OpenSans Extrabold';
+    src: url("/Step_3-4/fonts/OpenSans-ExtraBold.ttf");
 }
 
 body {
     background: #fff;
-
+    font-family: 'OpenSans', sans-serif;
 }
 
 .container {
@@ -110,9 +136,73 @@ color: #eeb501;
 .about {
     height: 714px;
     background: url(/Step_3-4/images/right_img.png) right center no-repeat,
-                url(/Step_3-4/images/section_about_back.png) center center/cover no-repeat,
-                url(/Step_3-4/images/section_about_bg.png) left bottom/cover no-repeat;               
+                url(/Step_3-4/images/section_about_background_full.jpg) center center/cover no-repeat;             
 }
+
+.about__header {
+    float: left;
+    padding-top: 181px;
+    width: 330px;
+}
+
+.about__header h2 {
+    font-family: 'OpenSans Extrabold';
+    font-size: 43.3px;
+line-height: 1.2;
+font-weight: 800;
+color: #1e0404;
+}
+
+.about__header span {
+    font-family: 'OpenSans Extrabold';
+    background: #eeb501;
+    font-size: 65px;
+    color: #ffffff;
+}
+
+.about__desc {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  grid-row-gap: 100px;
+  justify-items: center;
+  padding-top: 66px;
+}
+
+.about__descItem {
+    width: 291px;
+    text-align: center;
+}
+
+.about__descItemLogo {
+    background: #eeb501;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+ .about__descItemLogo i {
+    margin: 0 auto;
+    filter: invert(100%);
+ }
+
+ .about__descItemTitle {
+    font-family: 'OpenSans Bold';
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #1e0404;
+    padding: 18px 0;
+ }
+
+ .about__descItemDesc {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #1e0404;
+ }
 
 .portfolio {
     height: 1219px;
@@ -125,6 +215,7 @@ color: #eeb501;
 }
 
 .portfolio__header h2:nth-child(1) {
+    font-family: 'OpenSans Italic';
     font-size: 29.2px;
 line-height: 1.2;
 font-weight: 400;
@@ -133,6 +224,7 @@ color: #ffffff;
 }
 
 .portfolio__header h2:nth-child(2) {
+    font-family: 'OpenSans Extrabold';
     font-size: 43.3px;
     line-height: 1.2;
     font-weight: 800;
@@ -140,7 +232,8 @@ color: #ffffff;
 }
 
 .portfolio__header span {
-    font-size: 54.8px;
+    font-family: 'OCRAExtended';
+    font-size: 74.8px;
     font-weight: 400;
     letter-spacing: -0.05em;
     color: #ffffff;
@@ -194,6 +287,70 @@ color: #ffffff;
                 url(/Step_3-4/images/section_team_backgroud.png) center/auto no-repeat;               
 }
 
+.team__title {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.team__title span:nth-child(1) {
+    font-family: 'OpenSans Italic';
+    font-size: 29.2px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: italic;
+    color: #1e0404;
+}
+
+.team__title h2 {
+    font-family: 'OpenSans Extrabold';
+font-size: 43.3px;
+line-height: 1.2;
+font-weight: 800;
+color: #1e0404;
+padding: 10px 0 0 0;
+}
+
+.team__title span:nth-child(3) {
+    font-family: 'OCRAExtended';
+    font-size: 74.8px;
+    line-height: 45px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    color: #eeb501;
+}
+
+.team__people {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.team__peoplePerson:nth-child(odd) {
+    margin-top: 84px;
+}
+
+.team__peoplePerson {
+    padding-top: 24px;
+}
+
+.team__peoplePersonName {
+    font-family: 'OpenSans Extrabold';
+    text-align: center;
+    font-size: 29.2px;
+line-height: 1.2;
+font-weight: 800;
+color: #1e0404;
+padding: 30px 0 9px 0;
+}
+
+.team__peoplePersonProf {
+
+    text-align: center;
+    font-size: 29.2px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #1e0404;
+}
+
 .testimonials {
     height: 714px;
     background: url(/Step_3-4/images/section_testimonials_background_full.png) center center/cover no-repeat;     
@@ -220,11 +377,34 @@ margin-bottom: 19px;
     color: #ffffff;
 }
 
-.testimonials__header span {
-    font-size: 54.8px;
+.testimonials__header span:nth-child(3) {
+    font-family: 'OCRAExtended';
+    font-size: 74.8px;
+    line-height: 50px;
     font-weight: 400;
     letter-spacing: -0.05em;
-    color: #ffffff;
+    color: #eeb501;
+}
+
+.testimonials__headerQuotes {
+ display: flex;
+ justify-content: space-around;
+}
+
+.testimonials__headerQuotes span:nth-child(1) {
+    width: 59px;
+    height: 40px;
+    background: url(/Step_3-4/images/quotes_left.png) left center/cover no-repeat;
+}
+.testimonials__headerQuotes span:nth-child(3) {
+    width: 59px;
+    height: 40px;
+    background: url(/Step_3-4/images/quotes_right.png) right center/cover no-repeat;
+    /* font-family: 'OneStrokeScriptLetPlain';
+    font-size: 192.5px; */
+    /* line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff; */
 }
 
 .testimonials__header p {
@@ -263,14 +443,204 @@ color: #ffffff;
                 url(/Step_3-4/images/section_client_background.png) center bottom/auto no-repeat;  
 }
 
+.client__header {
+    text-align: center;
+    padding-top: 94px;
+}
+
+.client__header h3 {
+    font-family: 'OpenSans Italic';
+    font-size: 29.2px;
+line-height: 1.2;
+font-weight: 400;
+font-style: italic;
+color: #000000;
+}
+
+.client__header h2 {
+    font-family: 'OpenSans Extrabold';
+    font-size: 43.3px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #1e0404;
+}
+
+.client__header span {
+    font-family: 'OCRAExtended';
+    font-size: 74.8px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    color: #eeb501;
+}
+
+.client__header p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #434343;
+}
+
+.client__label {
+    padding-top: 65px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 150px 150px;
+    grid-gap: 1px;
+    
+}
+
+.client__label > img{
+justify-self: center;
+align-self: center;
+
+}
+
 .getit {
     height: 1390px;
-    background: url(/Step_3-4/images/section_getit_background.jpg) center center/cover no-repeat; 
+    background: url(/Step_3-4/images/section_getit_background_full.jpg) center center/cover no-repeat; 
 }
 
-.bgGetit {
-    height: 100%;
-    background-color: #252525;
-    mix-blend-mode: multiply;
+.getit__header {
+    text-align: center;
+    padding-top: 115px;
 }
 
+.getit__header h3 {
+    font-family: 'OpenSans Italic';
+    font-size: 29.2px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.getit__header h2 {
+    font-family: 'OpenSans Extrabold';
+    font-size: 43.3px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+.getit__header span {
+    font-family: 'OCRAExtended';
+    font-size: 74.8px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    color: #eeb501;
+}
+
+.getit__header p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.getit__map {
+    padding-top: 65px;
+}
+
+.getit__form {
+    padding-top: 74px;
+    text-align: center;
+}
+
+.getit__formTitle {
+    font-family: 'OpenSans Bold';
+    font-size: 29.2px;
+line-height: 1.2;
+font-weight: 700;
+color: #ffffff;
+padding-bottom: 30px;
+}
+
+.getit__formSent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 18px;
+    grid-template-areas: "name email phone" "message message button";
+  }
+  
+  .sentMessage { grid-area: message; }
+  
+  .sentName { grid-area: name; }
+  
+  .sentEmail { grid-area: email; }
+  
+  .sentPhone { grid-area: phone; }
+  
+  .sentButton { grid-area: button; }
+
+
+.getit__formSent .sentName,
+.getit__formSent .sentEmail,
+.getit__formSent .sentPhone {
+background-color: #2e2e2e;
+border: none;
+font-size: 17px;
+line-height: 62px;
+font-weight: 400;
+color: #adadad;
+padding: 0 20px 0 20px;
+outline: none;
+}
+
+.getit__formSent .sentMessage {
+    width: 125%;
+background-color: #2e2e2e;
+border: none;
+font-size: 17px;
+font-weight: 400;
+color: #adadad;
+padding: 0 20px 0 20px;
+outline: none;
+}
+
+.getit__formSent .sentButton {
+    width: 50%;
+justify-self: end;
+border: 3.0px solid #ffffff;
+background: none;
+font-size: 21.6px;
+line-height: 1.2;
+font-weight: 700;
+text-transform: uppercase;
+color: #ffffff;
+cursor: pointer;
+outline: none;
+}
+
+.getit__footer {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.getit__footerSocial {
+
+}
+
+.getit__footerSocialIcon {
+    background-color: #eeb501;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.getit__footerSocialIcon i {
+    margin: 0 auto;
+    filter: invert(100%);
+ }
+
+ .getit__footerText {
+     padding-top: 55px;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #ffffff;
+ }
