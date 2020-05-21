@@ -845,7 +845,7 @@ outline: none;
 
 
 /* Landscape phones and portrait tablets */
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
     .wrapper  {
         padding: 0 5px;
     }
@@ -997,4 +997,232 @@ outline: none;
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+    .wrapper  {
+        padding: 0;
+    }
+
+    .header__menu li:not(:nth-last-child(-1n+2)) {
+        margin-right: 5px;
+        display: none;
+    }
+    
+    .header__menu li:nth-last-child(-1n+2) {
+        margin-left: 5px;
+    }
+
+    .header__menu li a {
+        font-size: 30px;
+    }
+
+    .header__main {
+        position: static;
+        right: 0px;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 80%;
+        padding: 40px 0;
+    }
+
+    .header__img {
+        display: none;
+    }
+
+    .header__title h3 {
+        line-height: 50px;
+        font-size: 40px;
+    }
+    
+    .header__title h2 {
+        line-height: 80px;
+        font-size: 65px;
+    }
+    
+    .about__header {
+        float: none;
+        padding-top: 60px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about__header h2 {
+        font-size: 40px;
+    }
+     
+    .about__header span {
+        font-size: 50px;
+    }
+
+    .about__desc {
+        grid-template-columns: 1fr;
+      grid-row-gap: 50px;
+      justify-items: center;
+      padding: 60px 0;
+    }
+
+    .about__descItem {
+        width: 100%;
+    }
+    
+    
+    .about__descItemTitle {
+        font-size: 30px;
+     }
+    
+     .about__descItemDesc {
+        font-size: 20px;
+     }
+
+     .portfolio__img {
+        grid-template-areas: none;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .portfolio {
+        padding-bottom: 20px;
+    }
+
+    .portfolio__header {
+        padding-top: 40px;
+    }
+
+    .portfolio__header h2:nth-child(1) {
+        font-size: 25px;
+    }
+    
+    .portfolio__header h2:nth-child(2) {
+        font-size: 35px;
+    }
+
+    .portfolio__img img {
+        max-width: 100%;
+    }
+
+    .portfolio__img > div {
+        flex: none;
+        width: 100%;
+     }
+
+    .team {
+        background: url(/Step_3-4/images/left_img.png) left center no-repeat,
+                    url(/Step_3-4/images/section_team_backgroud.png) center/cover no-repeat;               
+    }
+
+    .team__title {
+        padding-top: 40px;
+    }
+
+    .team__title h2 {
+        font-size: 35px;
+    }
+
+    .team__people {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    }
+
+    .team__peoplePerson:nth-child(odd) {
+        margin-top: 24px;
+    }
+
+    .team__peoplePersonPhoto {
+        text-align: center;
+    }
+
+    .testimonials__header {
+        padding-top: 40px;
+    }
+
+    .testimonials__header h2 {
+        font-size: 35px;
+    }
+
+    .testimonials__headerQuotes span:nth-child(1) {
+        display: none;
+    }
+    .testimonials__headerQuotes span:nth-child(3) {
+        display: none;
+    }
+
+    .client__header {
+        padding-top: 40px;
+    }
+
+    .client__header h3 {
+        font-size: 22px;
+    }
+
+    .client__header h2 {
+        font-size: 35px;
+    }
+
+    .client__label {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 0px;
+        padding-bottom: 40px;
+    }
+
+    .client__label > img {
+        width: 90%;
+    }
+
+    .getit__header {
+        padding-top: 40px;
+    }
+
+    .getit__header h3 {
+        font-size: 22px;
+    }
+
+    .getit__header h2 {
+        font-size: 35px;
+    }
+
+    .getit__formSent .sentMessage {
+        width: 100%;
+    }
+
+    .getit__formSent .sentButton {
+        width: 50%;
+    justify-self: center;
+    border: 3.0px solid #ffffff;
+    background: none;
+    font-size: 21.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    }
+
+    .getit__formSent {
+        grid-template-areas:
+        "name"
+        "email"
+        "phone"
+        "message"
+        "button";
+      }
+
+      .getit__footerSocial {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          width: 50%;
+          margin: 0 auto;
+          grid-row-gap: 5px;
+    }
+
+    .getit__footerSocial > div {
+        margin: 0 auto;
+  }
+
+      .getit__footerText > div {
+            font-size: 12px;
+      }
 }
