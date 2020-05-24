@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: 'OpenSans', sans-serif;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.wrapper  {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@import "../css/_fonts.scss";
+
+@import "../css/_header.scss";
