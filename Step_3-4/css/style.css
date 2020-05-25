@@ -6,32 +6,32 @@
 
 @font-face {
     font-family: 'OneStrokeScriptLetPlain';
-    src: url("/Step_3-4/fonts/OneStrokeScript_LET.ttf");
+    src: url("../fonts/OneStrokeScript_LET.ttf");
 }
 
 @font-face {
     font-family: 'OCRAExtended';
-    src: url("/Step_3-4/fonts/ocraextended.ttf");
+    src: url("../fonts/ocraextended.ttf");
 }
 
 @font-face {
     font-family: 'OpenSans';
-    src: url("/Step_3-4/fonts/OpenSans-Regular.ttf");
+    src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
     font-family: 'OpenSans Italic';
-    src: url("/Step_3-4/fonts/OpenSans-Italic.ttf");
+    src: url("../fonts/OpenSans-Italic.ttf");
 }
 
 @font-face {
     font-family: 'OpenSans Bold';
-    src: url("/Step_3-4/fonts/OpenSans-Bold.ttf");
+    src: url("../fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
     font-family: 'OpenSans Extrabold';
-    src: url("/Step_3-4/fonts/OpenSans-ExtraBold.ttf");
+    src: url("../fonts/OpenSans-ExtraBold.ttf");
 }
 
 body {
@@ -52,7 +52,7 @@ body {
 
 header {
     min-height: 813px;
-    background: url('/Step_3-4/images/header_background.jpg') center center/cover no-repeat;
+    background: url('../images/header_background.jpg') center center/cover no-repeat;
     outline: 1px solid red;
 
 }
@@ -136,7 +136,7 @@ color: #ffffff;
 
 .header__img {
     position: absolute;
-    background: url(/Step_3-4/images/header_img.png);
+    background: url(../images/header_img.png);
     min-height: 770px;
     min-width: 745px;
     margin-top: 60px;
@@ -191,8 +191,8 @@ color: #ffffff;
 
 .about {
     min-height: 714px;
-    background: url(/Step_3-4/images/right_img.png) right center no-repeat,
-                url(/Step_3-4/images/section_about_background_full.jpg) center center/cover no-repeat;             
+    background: url(../images/right_img.png) right center no-repeat,
+                url(../images/section_about_background_full.jpg) center center/cover no-repeat;             
 }
 
 .about__header {
@@ -263,7 +263,7 @@ color: #ffffff;
 
 .portfolio {
     min-height: 1219px;
-    background: url(/Step_3-4/images/section_portfolio_background_full.jpg) center center/cover no-repeat;
+    background: url(../images/section_portfolio_background_full.jpg) center center/cover no-repeat;
 }
 
 .portfolio__header {
@@ -344,8 +344,8 @@ color: #ffffff;
 
 .team {
     min-height: 935px;
-    background: url(/Step_3-4/images/left_img.png) left 255px no-repeat,
-                url(/Step_3-4/images/section_team_backgroud.png) center/auto no-repeat;               
+    background: url(../images/left_img.png) left 255px no-repeat,
+                url(../images/section_team_backgroud.png) center/auto no-repeat;               
 }
 
 .team__title {
@@ -461,7 +461,7 @@ padding: 30px 0 9px 0;
 
 .testimonials {
     min-height: 714px;
-    background: url(/Step_3-4/images/section_testimonials_background_full.png) center center/cover no-repeat fixed;     
+    background: url(../images/section_testimonials_background_full.png) center center/cover no-repeat fixed;     
 }
 
 .testimonials__header {
@@ -502,12 +502,12 @@ margin-bottom: 19px;
 .testimonials__headerQuotes span:nth-child(1) {
     width: 59px;
     height: 40px;
-    background: url(/Step_3-4/images/quotes_left.png) left center/cover no-repeat;
+    background: url(../images/quotes_left.png) left center/cover no-repeat;
 }
 .testimonials__headerQuotes span:nth-child(3) {
     width: 59px;
     height: 40px;
-    background: url(/Step_3-4/images/quotes_right.png) right center/cover no-repeat;
+    background: url(../images/quotes_right.png) right center/cover no-repeat;
 }
 
 
@@ -605,12 +605,6 @@ margin-bottom: 19px;
 	border-radius: 50%;
 }
 
-
-
-
-
-
-
 .testimonials__header p {
     font-size: 20px;
     line-height: 24px;
@@ -643,8 +637,8 @@ color: #ffffff;
 
 .client {
     min-height: 770px;
-    background: url(/Step_3-4/images/right_img.png) right center no-repeat,
-                url(/Step_3-4/images/section_client_background.png) center bottom/auto no-repeat;  
+    background: url(../images/right_img.png) right center no-repeat,
+                url(../images/section_client_background.png) center bottom/auto no-repeat;  
 }
 
 .client__header {
@@ -727,7 +721,7 @@ color: #000000;
 
 .getit {
     min-height: 1390px;
-    background: url(/Step_3-4/images/section_getit_background_full.jpg) center center/cover no-repeat; 
+    background: url(../images/section_getit_background_full.jpg) center center/cover no-repeat; 
 }
 
 .getit__header {
@@ -914,8 +908,8 @@ outline: none;
     }
 
     .team {
-        background: url(/Step_3-4/images/left_img.png) left center no-repeat,
-                    url(/Step_3-4/images/section_team_backgroud.png) center/cover no-repeat;               
+        background: url(../images/left_img.png) left center no-repeat,
+                    url(../images/section_team_backgroud.png) center/cover no-repeat;               
     }
 
     .team__people {
@@ -1014,8 +1008,8 @@ outline: none;
      }
 
     .team {
-        background: url(/Step_3-4/images/left_img.png) left center no-repeat,
-                    url(/Step_3-4/images/section_team_backgroud.png) center/cover no-repeat;               
+        background: url(../images/left_img.png) left center no-repeat,
+                    url(../images/section_team_backgroud.png) center/cover no-repeat;               
     }
 
     .team__people {
@@ -1143,8 +1137,8 @@ outline: none;
      }
 
     .team {
-        background: url(/Step_3-4/images/left_img.png) left center no-repeat,
-                    url(/Step_3-4/images/section_team_backgroud.png) center/cover no-repeat;               
+        background: url(../images/left_img.png) left center no-repeat,
+                    url(../images/section_team_backgroud.png) center/cover no-repeat;               
     }
 
     .team__people {
@@ -1336,8 +1330,8 @@ outline: none;
      }
 
     .team {
-        background: url(/Step_3-4/images/left_img.png) left center no-repeat,
-                    url(/Step_3-4/images/section_team_backgroud.png) center/cover no-repeat;               
+        background: url(../images/left_img.png) left center no-repeat,
+                    url(../images/section_team_backgroud.png) center/cover no-repeat;               
     }
 
     .team__title {
@@ -1490,13 +1484,13 @@ outline: none;
     animation: animationFrames ease-in-out 4s;
     animation-iteration-count: 1;
     transform-origin: 50% 50%;
-  }
+}
   
-  @keyframes animationFrames{
+@keyframes animationFrames{
     0% {
       transform:  translate(1000px,-300px)  scaleX(0.05) scaleY(0.05) ;
     }
     100% {
       transform:  translate(0px,0px)  scaleX(1.00) scaleY(1.00) ;
     }
-  }
+}
