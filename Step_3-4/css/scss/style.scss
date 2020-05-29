@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "../scss/_fonts.scss";
+@import "../scss/_variables.scss";
+
+body {
+    background: #fff;
+    font-family: 'OpenSans', sans-serif;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.wrapper  {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@import "../scss/_header.scss";
+@import "../scss/_about.scss";
+@import "../scss/_portfolio.scss";
+@import "../scss/_team.scss";
+@import "../scss/_testimonials.scss";
+@import "../scss/_client.scss";
+@import "../scss/_getit.scss";

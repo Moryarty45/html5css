@@ -1,0 +1,144 @@
+.getit {
+    min-height: 1390px;
+    background: url(../images/section_getit_background_full.jpg) center center/cover no-repeat;
+    &__header {
+        text-align: center;
+        padding-top: 115px;
+        h2{
+            font-family: 'OpenSans Extrabold', sans-serif;
+            font-size: 43.3px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: $mainColor2;
+            padding-top: 20px;
+        }
+        h3 {
+            font-family: 'OpenSans Italic', sans-serif;
+            font-size: 29.2px;
+            line-height: 1.2;
+            font-weight: 400;
+            font-style: italic;
+            color: $mainColor2;
+        }
+        span {
+            font-family: 'OCRAExtended';
+            font-size: 74.8px;
+            font-weight: 400;
+            letter-spacing: -0.05em;
+            color: $mainColor1;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: $mainColor2;
+        }
+    }
+
+    &__map {
+        padding-top: 65px;
+    }
+
+    &__form {
+        padding-top: 74px;
+        text-align: center;
+    }
+
+    &__formTitle {
+        font-family: 'OpenSans Bold', sans-serif;
+        font-size: 29.2px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: $mainColor2;
+        padding-bottom: 30px;
+    }
+
+    &__formSent {
+        display: grid;
+        grid-gap: 18px;
+        grid-template-areas: "name email phone" "message message button";
+    }
+
+    &__footer {
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    &__footerSocial {
+    }
+
+    &__footerSocialIcon {
+        background-color: $mainColor1;
+        width: 57px;
+        height: 57px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        margin: 0 10px;
+        transition: .5s;
+        &:hover {
+            transform: scale(1.4);
+        }
+        i {
+            margin: 0 auto;
+            filter: invert(100%);
+        }
+    }
+
+    &__footerText {
+        padding-top: 55px;
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 400;
+        color: $mainColor2;
+    }
+}
+.sentName {
+    grid-area: name;
+}
+.sentEmail {
+    grid-area: email;
+}
+.sentPhone {
+    grid-area: phone;
+}
+
+.sentName,
+.sentEmail,
+.sentPhone {
+background-color: #2e2e2e;
+border: none;
+font-size: 17px;
+line-height: 62px;
+font-weight: 400;
+color: #adadad;
+padding: 0 20px 0 20px;
+outline: none;
+}
+
+.sentMessage {
+    grid-area: message;
+    width: 125%;
+    background-color: #2e2e2e;
+    border: none;
+    font-size: 17px;
+    line-height: 62px;
+    font-weight: 400;
+    color: #adadad;
+    padding: 0 20px 0 20px;
+    outline: none;
+}
+.sentButton {
+    grid-area: button;
+    width: 50%;
+    justify-self: end;
+    border: 3.0px solid $mainColor2;
+    background: none;
+    font-size: 21.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $mainColor2;
+    cursor: pointer;
+    outline: none;
+}
