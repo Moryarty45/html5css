@@ -1,0 +1,112 @@
+.portfolio {
+    min-height: 1219px;
+    background: url(../images/section_portfolio_background_full.jpg) center center/cover no-repeat;
+    @media screen and (max-width: 991px) {
+        padding-bottom: 20px;
+    }
+    &__header {
+        text-align: center;
+        padding: 100px 0 65px 0;
+        h2:nth-child(1) {
+            font-family: 'OpenSans Italic', sans-serif;
+            font-size: 29.2px;
+            line-height: 1.2;
+            font-weight: 400;
+            font-style: italic;
+            color: $mainColor2;
+            @media (max-width: 480px) {
+                font-size: 25px;
+            }
+        }
+        h2:nth-child(2) {
+            font-family: 'OpenSans Extrabold', sans-serif;
+            font-size: 43.3px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: $mainColor2;
+            @media (max-width: 480px) {
+                font-size: 35px;
+            }
+        }
+        span {
+            font-family: 'OCRAExtended';
+            font-size: 74.8px;
+            font-weight: 400;
+            letter-spacing: -0.05em;
+            color: $mainColor2;
+        }
+        p {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 400;
+            color: $mainColor2;
+        }
+        @media (max-width: 480px) {
+            padding-top: 40px;
+        }
+    }
+
+    &__img {
+        display: grid;
+        grid-template-areas:
+        'img1 img2 img3'
+        'img1 img4 img4';
+        grid-gap: 22px;
+        img {
+            max-width: 100%;
+            @media screen and (max-width: 991px) {
+                max-width: none;
+                width: 90%;
+            }
+        }
+        @media screen and (max-width: 991px) {
+            grid-template-areas: none;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        & > div {
+            @media (min-width: 768px) and (max-width: 991px) {
+                flex: 100%;
+                width: 100%;
+            }
+            @media screen and (max-width: 767px) {
+                flex: none;
+                width: 100%;
+            }
+        }
+    }
+
+    &__button {
+        border: 3.0px solid #ffffff;
+        width: 207px;
+        height: 57px;
+        font-size: 21.6px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background: none;
+        outline: none;
+        display: block;
+        margin: 40px auto 60px auto;
+        &:hover {
+            background-color: $mainColor2;
+            color: black;
+        }
+    }
+}
+
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.img3 {
+    grid-area: img3;
+}
+.img4 {
+    grid-area: img4;
+}

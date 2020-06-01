@@ -1,0 +1,180 @@
+.testimonials {
+    min-height: 714px;
+    background: url(../images/section_testimonials_background_full.png) center center/cover no-repeat fixed;
+    &__header {
+        text-align: center;
+        padding: 55px 0 33px 0;
+        h2:nth-child(1) {
+            font-size: 29.2px;
+            line-height: 1.2;
+            font-weight: 400;
+            font-style: italic;
+            color: $mainColor2;
+            margin-bottom: 19px;
+        }
+        h2:nth-child(2) {
+            font-size: 43.3px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: $mainColor2;
+        }
+        h2 {
+            @media (max-width: 480px) {
+                font-size: 35px;
+            }
+        }
+        span:nth-child(3) {
+            font-family: 'OCRAExtended';
+            font-size: 74.8px;
+            line-height: 50px;
+            font-weight: 400;
+            letter-spacing: -0.05em;
+            color: $mainColor1;
+        }
+        p {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 400;
+            color: $mainColor2;
+        }
+        @media (max-width: 480px) {
+            padding-top: 40px;
+            padding-bottom: 0;
+        }
+    }
+
+    &__headerQuotes {
+        display: flex;
+        justify-content: space-around;
+        span:nth-child(1) {
+            width: 59px;
+            height: 40px;
+            background: url(../images/quotes_left.png) left center/cover no-repeat;
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
+        }
+        span:nth-child(3) {
+            width: 59px;
+            height: 40px;
+            background: url(../images/quotes_right.png) right center/cover no-repeat;
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
+        }
+    }
+
+    &__people {
+        text-align: center;
+        img {
+            padding-bottom: 20px;
+        }
+        h3 {
+            line-height: 1.2;
+            &:nth-child(2) {
+                font-size: 29.2px;
+                font-weight: 800;
+                color: $mainColor1;
+                @media (max-width: 480px) {
+                    font-size: 23px;
+                    line-height: 1.1;
+                }
+            }
+            &:nth-child(3){
+                font-size: 25px;
+                font-weight: 400;
+                color: $mainColor2;
+                @media (max-width: 480px) {
+                    font-size: 23px;
+                    line-height: 1.1;
+                }
+            }
+        }
+    }
+}
+
+.sliderWrapper {
+    width: 900px;
+    min-height: 420px;
+    > input {
+        display: none;
+    }
+    label {
+        cursor: pointer;
+        display: inline-block;
+        height: 8px;
+        margin: 25px 12px 0 16px;
+        position: relative;
+        width: 8px;
+        border-radius: 50%;
+        transition: background ease-in-out .5s;
+        &:after {
+            border: 2px solid #ddd;
+            content: " ";
+            display: block;
+            height: 12px;
+            left: -4px;
+            position: absolute;
+            top: -4px;
+            width: 12px;
+            border-radius: 50%;
+        }
+    }
+}
+.slider {
+    height: 400px;
+    width: 100%;
+	overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+.slides {
+    height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	transform: scale(1.5);
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    display: grid;
+    grid-template-rows: 1fr 200px
+}
+.slide1,
+.slide2,
+.slide3,
+.slide4,
+.slide5 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    @media (max-width: 480px) {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+.controls {
+    left: 50%;
+	margin-left: -98px;
+	position: absolute;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+	opacity: 1;
+	z-index: 1;
+	transform: scale(1);
+}
+
+.sliderWrapper label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+	background: #ddd;
+}
