@@ -1268,6 +1268,12 @@ body {
   padding-top: 115px;
 }
 
+@media (max-width: 480px) {
+  .getit__header {
+    padding-top: 40px;
+  }
+}
+
 .getit__header h2 {
   font-family: 'OpenSans Extrabold', sans-serif;
   font-size: 43.3px;
@@ -1277,6 +1283,12 @@ body {
   padding-top: 20px;
 }
 
+@media (max-width: 480px) {
+  .getit__header h2 {
+    font-size: 35px;
+  }
+}
+
 .getit__header h3 {
   font-family: 'OpenSans Italic', sans-serif;
   font-size: 29.2px;
@@ -1284,6 +1296,12 @@ body {
   font-weight: 400;
   font-style: italic;
   color: #fff;
+}
+
+@media (max-width: 480px) {
+  .getit__header h3 {
+    font-size: 22px;
+  }
 }
 
 .getit__header span {
@@ -1326,9 +1344,32 @@ body {
       grid-template-areas: "name email phone" "message message button";
 }
 
+@media screen and (max-width: 767px) {
+  .getit__formSent {
+        grid-template-areas: "name" "email" "phone" "message" "button";
+  }
+}
+
 .getit__footer {
   text-align: center;
   padding-top: 60px;
+}
+
+@media (max-width: 480px) {
+  .getit__footerSocial {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    width: 50%;
+    margin: 0 auto;
+    grid-row-gap: 5px;
+  }
+  .getit__footerSocial > div {
+    margin: 0 auto;
+  }
 }
 
 .getit__footerSocialIcon {
@@ -1364,6 +1405,12 @@ body {
   line-height: 36px;
   font-weight: 400;
   color: #fff;
+}
+
+@media (max-width: 480px) {
+  .getit__footerText > div {
+    font-size: 12px;
+  }
 }
 
 .sentName {
@@ -1413,6 +1460,12 @@ body {
   outline: none;
 }
 
+@media screen and (max-width: 767px) {
+  .sentMessage {
+    width: 100%;
+  }
+}
+
 .sentButton {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
@@ -1429,6 +1482,13 @@ body {
   color: #fff;
   cursor: pointer;
   outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .sentButton {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
 }
 
 @-webkit-keyframes animationFrames {

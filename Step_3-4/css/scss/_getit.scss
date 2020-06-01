@@ -4,13 +4,19 @@
     &__header {
         text-align: center;
         padding-top: 115px;
-        h2{
+        @media (max-width: 480px) {
+            padding-top: 40px;
+        }
+        h2 {
             font-family: 'OpenSans Extrabold', sans-serif;
             font-size: 43.3px;
             line-height: 1.2;
             font-weight: 800;
             color: $mainColor2;
             padding-top: 20px;
+            @media (max-width: 480px) {
+                font-size: 35px;
+            }
         }
         h3 {
             font-family: 'OpenSans Italic', sans-serif;
@@ -19,6 +25,9 @@
             font-weight: 400;
             font-style: italic;
             color: $mainColor2;
+            @media (max-width: 480px) {
+                font-size: 22px;
+            }
         }
         span {
             font-family: 'OCRAExtended';
@@ -57,6 +66,14 @@
         display: grid;
         grid-gap: 18px;
         grid-template-areas: "name email phone" "message message button";
+        @media screen and (max-width: 767px) {
+            grid-template-areas:
+            "name"
+            "email"
+            "phone"
+            "message"
+            "button";
+        }
     }
 
     &__footer {
@@ -65,6 +82,17 @@
     }
 
     &__footerSocial {
+        @media (max-width: 480px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 50%;
+            margin: 0 auto;
+            grid-row-gap: 5px;
+            & > div {
+                margin: 0 auto;
+            }
+        }
     }
 
     &__footerSocialIcon {
@@ -91,6 +119,11 @@
         line-height: 36px;
         font-weight: 400;
         color: $mainColor2;
+        & > div {
+            @media (max-width: 480px) {
+                font-size: 12px;
+            }
+        }
     }
 }
 .sentName {
@@ -127,6 +160,9 @@ outline: none;
     color: #adadad;
     padding: 0 20px 0 20px;
     outline: none;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
 }
 .sentButton {
     grid-area: button;
@@ -141,4 +177,7 @@ outline: none;
     color: $mainColor2;
     cursor: pointer;
     outline: none;
+    @media screen and (max-width: 767px) {
+        justify-self: center;
+    }
 }
