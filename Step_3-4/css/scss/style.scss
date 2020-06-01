@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-@import "../scss/_fonts.scss";
-@import "../scss/_variables.scss";
+@import "../scss/_fonts";
+@import "../scss/_variables";
 
 body {
     background: #fff;
@@ -21,12 +21,27 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    @media (min-width: 481px) and (max-width: 1199px) {
+        padding: 0 5px;
+    }
+    @media (max-width: 480px) {
+        padding: 0;
+    }
 }
 
-@import "../scss/_header.scss";
-@import "../scss/_about.scss";
-@import "../scss/_portfolio.scss";
-@import "../scss/_team.scss";
-@import "../scss/_testimonials.scss";
-@import "../scss/_client.scss";
-@import "../scss/_getit.scss";
+@import "../scss/_header";
+@import "../scss/_about";
+@import "../scss/_portfolio";
+@import "../scss/_team";
+@import "../scss/_testimonials";
+@import "../scss/_client";
+@import "../scss/_getit";
+
+@keyframes animationFrames{
+    0% {
+      transform:  translate(1000px,-300px)  scaleX(0.05) scaleY(0.05) ;
+    }
+    100% {
+      transform:  translate(0px,0px)  scaleX(1.00) scaleY(1.00) ;
+    }
+}

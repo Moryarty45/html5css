@@ -2,6 +2,10 @@
     min-height: 935px;
     background: url(../images/left_img.png) left 255px no-repeat,
                 url(../images/section_team_backgroud.png) center/auto no-repeat;
+    @media screen and (max-width: 1199px) {
+        background: url(../images/left_img.png) left center no-repeat,
+                    url(../images/section_team_backgroud.png) center/cover no-repeat;   
+    }
     &__title {
         text-align: center;
         padding-top: 100px;
@@ -20,6 +24,9 @@
             font-weight: 800;
             color: #1e0404;
             padding: 10px 0 0 0;
+            @media (max-width: 480px) {
+                font-size: 35px;
+            }
         }
         span:nth-child(3) {
             font-family: 'OCRAExtended';
@@ -29,12 +36,33 @@
             letter-spacing: -0.05em;
             color: $mainColor1; 
         }
+        @media (max-width: 480px) {
+            padding-top: 40px;
+        }
     }
 
     &__people {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         padding-bottom: 80px;
+        @media (min-width: 992px) and (max-width: 1199px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 1fr;
+            width: 90%;
+            margin: 0 auto;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 1fr 1fr;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            width: 100%;
+            margin: 0 auto;
+        }
     }
 
     &__peoplePerson {
@@ -43,6 +71,12 @@
         &:nth-child(odd) {
             margin-top: 84px;
             // justify-self: center;
+            @media (min-width: 768px) and (max-width: 1199px) {
+                margin-top: 0;
+            }
+            @media screen and (max-width: 767px) {
+                margin-top: 24px;
+            }
         }
     }
 
@@ -53,6 +87,9 @@
         &:hover .team__peoplePersonPhoto {
             transform: rotateY(180deg);
         }
+        @media (min-width: 992px) and (max-width: 1199px) {
+            width: 100%;
+        }
     }
 
     &__peoplePersonPhoto {
@@ -60,7 +97,10 @@
         width: 280px;
         height: 410px;
         transform-style: preserve-3d;
-        transition: .7s linear; 
+        transition: .7s linear;
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
     }
 
     &__peoplePersonPhotoFront,
@@ -100,9 +140,10 @@
     }
 }
 
-.frontFlip {
+.peoplePersonPhoto_frontFlip {
     transform: rotateY(0deg);
 }
-.backFlip {
+
+.peoplePersonPhoto_backFlip {
     transform: rotateY(-180deg);
 }

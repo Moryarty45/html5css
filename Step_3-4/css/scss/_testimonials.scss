@@ -18,6 +18,11 @@
             font-weight: 800;
             color: $mainColor2;
         }
+        h2 {
+            @media (max-width: 480px) {
+                font-size: 35px;
+            }
+        }
         span:nth-child(3) {
             font-family: 'OCRAExtended';
             font-size: 74.8px;
@@ -32,6 +37,10 @@
             font-weight: 400;
             color: $mainColor2;
         }
+        @media (max-width: 480px) {
+            padding-top: 40px;
+            padding-bottom: 0;
+        }
     }
 
     &__headerQuotes {
@@ -41,11 +50,17 @@
             width: 59px;
             height: 40px;
             background: url(../images/quotes_left.png) left center/cover no-repeat;
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
         }
         span:nth-child(3) {
             width: 59px;
             height: 40px;
             background: url(../images/quotes_right.png) right center/cover no-repeat;
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
         }
     }
 
@@ -60,11 +75,19 @@
                 font-size: 29.2px;
                 font-weight: 800;
                 color: $mainColor1;
+                @media (max-width: 480px) {
+                    font-size: 23px;
+                    line-height: 1.1;
+                }
             }
             &:nth-child(3){
                 font-size: 25px;
                 font-weight: 400;
                 color: $mainColor2;
+                @media (max-width: 480px) {
+                    font-size: 23px;
+                    line-height: 1.1;
+                }
             }
         }
     }
@@ -126,6 +149,10 @@
     line-height: 24px;
     font-weight: 400;
     color: #ffffff;
+    @media (max-width: 480px) {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 .controls {
     left: 50%;

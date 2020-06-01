@@ -5,12 +5,18 @@
     &__header {
         text-align: center;
         padding-top: 94px;
+        @media (max-width: 480px) {
+            padding-top: 40px;
+        }
         h2 {
             font-family: 'OpenSans Extrabold', sans-serif;
             font-size: 43.3px;
             line-height: 1.2;
             font-weight: 800;
             color: #1e0404;
+            @media (max-width: 480px) {
+                font-size: 35px;
+            }
         }
         h3 {
             font-family: 'OpenSans Italic', sans-serif;
@@ -19,6 +25,9 @@
             font-weight: 400;
             font-style: italic;
             color: #000000;
+            @media (max-width: 480px) {
+                font-size: 22px;
+            }
         }
         span {
             font-family: 'OCRAExtended';
@@ -41,6 +50,24 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 150px 150px;
         grid-gap: 1px;
+        @media (min-width: 481px) and (max-width: 767px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: none;
+            grid-auto-rows: 150px;
+            grid-gap: 0px;
+            padding-bottom: 40px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: none;
+            grid-auto-rows: 150px;
+            grid-gap: 0px;
+            padding-bottom: 40px;
+            width: 90%;
+            margin: 0 auto;
+        }
     }
 
     &__labels {
@@ -54,6 +81,36 @@
         }
         &:nth-child(n+5) {
             border-top: solid 1px #a3a3a3;
+            @media (min-width: 481px) and (max-width: 767px) {
+                border-top: solid 1px #a3a3a3;
+                border-bottom: none;
+            }
+            @media (max-width: 480px) {
+                border-top: none;
+            }
+        }
+        @media (min-width: 481px) and (max-width: 767px) {
+            border-bottom: solid 1px #a3a3a3;
+            border-right: solid 1px #a3a3a3;
+        }
+        @media (max-width: 480px) {
+            border-bottom: solid 1px #a3a3a3;
+            border-right: none;
+        }
+        &:nth-child(2n) {
+            @media (min-width: 481px) and (max-width: 767px) {
+                border-right: none;
+            }
+        }
+        &:nth-child(n+3) {
+            @media (min-width: 481px) and (max-width: 767px) {
+                border-bottom: none;
+            }
+        }
+        &:last-child {
+            @media (max-width: 480px) {
+                border-bottom: none;
+            }
         }
     }
 }

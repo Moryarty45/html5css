@@ -12,11 +12,23 @@
             line-height: 1.2;
             font-weight: 800;
             color: #1e0404;
+            @media (max-width: 480px) {
+                font-size: 40px;
+            }
         }
         span {
             background: $mainColor1;
             font-size: 65px;
             color: $mainColor2;
+            @media (max-width: 480px) {
+                font-size: 50px;
+            }
+        }
+        @media screen and (max-width: 991px) {
+            float: none;
+            padding-top: 60px;
+            width: 100%;
+            text-align: center;
         }
     }
 
@@ -26,11 +38,23 @@
         grid-row-gap: 100px;
         justify-items: center;
         padding-top: 66px;
+        @media (min-width: 768px) and (max-width: 991px) {
+            grid-row-gap: 50px;
+            padding: 60px 0;
+        }
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 50px;
+            padding: 60px 0;
+        }
     }
 
     &__descItem {
         width: 291px;
         text-align: center;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
     }
 
     &__descItemLogo {
@@ -54,6 +78,9 @@
         font-weight: 700;
         color: #1e0404;
         padding: 18px 0;
+        @media screen and (max-width: 991px) {
+            font-size: 30px;
+        }
     }
 
     &__descItemDesc {
@@ -61,5 +88,8 @@
         line-height: 24px;
         font-weight: 400;
         color: #1e0404;
+        @media screen and (max-width: 991px) {
+            font-size: 20px;
+        }
     }
 }
